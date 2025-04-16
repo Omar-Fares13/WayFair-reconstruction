@@ -1,0 +1,527 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+<!--Start Section 1-->
+<div class="sec1 mt-5 mb-5" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 pb-3 pt-2">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#"><img src="{% static 'main/images/sec1-1.png' %}" alt="#" class="img-fluid"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="{% static 'main/images/sec1-4.png' %}" alt="#" class="img-fluid"></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="row mycard pb-2 pt-2"><a href="#"><img src="{% static 'main/images/sec1-2.png' %}" alt="" class="img-fluid"></a></div>
+          <div class="row mycard pb-2 pt-2"><a href="#"><img src="{% static 'main/images/sec1-3.png' %}" alt="" class="img-fluid"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--End Section 1-->
+  
+  
+  <!--Start Section 2-->
+  
+  <div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-4 mycard mb-3 pb-2 pt-2">
+        <a href="#">
+            <img src="{% static 'main/images/sec2-1.webp' %}" alt="Image 1" class="img-fluid">
+        </a>
+    </div>
+    <div class="col-md-4 mycard mb-3 pb-2 pt-2">
+        <a href="#">
+            <img src="{% static 'main/images/sec2-2.webp' %}" alt="Image 2" class="img-fluid">
+        </a>
+    </div>
+    <div class="col-md-4 mycard mb-3 pb-2 pt-2">
+        <a href="#">
+            <img src="{% static 'main/images/sec2-3.webp' %}" alt="Image 3" class="img-fluid">
+        </a>
+    </div>
+  </div>
+  </div>
+  
+  <!--End Section 2-->
+  
+  
+  <!--Start Section 3-->
+  
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-12 mycard px-0">
+          <a href="#">
+              <img src="{% static 'main/images/sec3.webp' %}" alt="Image 1" class="img-fluid">
+          </a>
+      </div>
+      
+    </div>
+    </div>
+    
+  <!--End Section 3-->
+  
+  
+  <!--Start Section 4-->
+  
+  <div class="container mt-5 sec4">
+    <h1 class="text-center mt-5 mb-5">Shop by Department</h1>
+    <div class="row mb-4">
+        <div class="col-md-2">
+            <a href="#" class="card text-center mycard border-0">
+                <img src="{% static 'main/images/sec4-1.webp' %}" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Sale</h5>
+                </div>
+              </a>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="card text-center mycard border-0">
+              <img src="{% static 'main/images/sec4-2.webp' %}" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                  <h5 class="card-title">Furniture</h5>
+              </div>
+            </a>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="card text-center mycard border-0">
+            <img src="{% static 'main/images/sec4-3.webp' %}" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Outdoor</h5>
+            </div>
+          </a>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="card text-center mycard border-0">
+          <img src="{% static 'main/images/sec4-4.webp' %}" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+              <h5 class="card-title">Bedding & Bath</h5>
+          </div>
+        </a>
+  </div>
+  <div class="col-md-2">
+    <a href="#" class="card text-center mycard border-0">
+        <img src="{% static 'main/images/sec4-5.webp' %}" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+            <h5 class="card-title">Decore & Pillows</h5>
+        </div>
+      </a>
+  </div>
+  <div class="col-md-2">
+    <a href="#" class="card text-center mycard border-0">
+        <img src="{% static 'main/images/sec4-6.webp' %}" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+            <h5 class="card-title">Rugs</h5>
+        </div>
+      </a>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <a href="#" class="card text-center mycard border-0">
+            <img src="{% static 'main/images/sec4-7.webp' %}" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Lighting</h5>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="card text-center mycard border-0">
+            <img src="{% static 'main/images/sec4-8.webp' %}" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Home Improvement</h5>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="card text-center mycard border-0">
+            <img src="{% static 'main/images/sec4-9.webp' %}" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Appliances</h5>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="card text-center mycard border-0">
+            <img src="{% static 'main/images/sec4-10.webp' %}" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Kitchen</h5>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="card text-center mycard border-0">
+            <img src="{% static 'main/images/sec4-11.webp' %}" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Baby & Kids</h5>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="card text-center mycard border-0">
+            <img src="{% static 'main/images/sec4-12.webp' %}" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Organization</h5>
+            </div>
+          </a>
+      </div>
+    </div>
+  </div>
+  
+  <!--End Section 4-->
+  
+  
+  
+  <!--Start Section 5-->
+  
+  <div class="container text-center mt-5 sec5-head">
+    <h2>Level Up Your Living Room</h2>
+    <a href="#">Shop Furniture & Decor</a>
+  </div>
+  
+  <div class="container mt-5 sec5">
+    <div class="row">
+        <div class="col-md-3 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec5-1.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sectionals & Sofas</h5>
+                        <p class="card-text">All the comfort - for so much less.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec5-2.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">End Tables</h5>
+                        <p class="card-text">Functionality, But make it cut.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec5-3.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Accent Chairs</h5>
+                        <p class="card-text">Tons of options for anuy corner or nook.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec5-4.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coffee Tables</h5>
+                        <p class="card-text">Meet your use-it-for-everything table.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+  </div>
+    
+  <!--End Section 5-->
+  
+  <!--Start Section 6-->
+  
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-12 mycard pt-1 pb-1 ps-1 pe-1">
+          <a href="#">
+              <img src="{% static 'main/images/sec6.png' %}" alt="Image 1" class="img-fluid">
+          </a>
+      </div>
+      
+    </div>
+    </div>
+    
+  <!--End Section 6-->
+  
+  
+  <!--Start Section 7-->
+  
+  <div class="container text-center mt-5 sec5-head">
+    <h2>Explore our Exclusive Brands</h2>
+    <p>Bring your vision to life with hand-curated collections, priced just right.</p>
+    <a href="#">Shop All</a>
+  </div>
+  
+  <div class="container mt-5 sec5">
+    <div class="row">
+        <div class="col-md-2 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec7-1.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+  
+                        <p class="card-text">All the comfort - for so much less.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec7-2.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+  
+                        <p class="card-text">Functionality, But make it cut.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec7-3.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+  
+                        <p class="card-text">Tons of options for anuy corner or nook.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec7-4.webp' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+  
+                        <p class="card-text">Meet your use-it-for-everything table.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 mb-4 mycard">
+          <a href="#">
+              <div class="card border-0">
+                  <img src="{% static 'main/images/sec7-5.webp' %}" class="card-img-top" alt="Image 1">
+                  <div class="card-body text-center">
+  
+                      <p class="card-text">Meet your use-it-for-everything table.</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="col-md-2 mb-4 mycard">
+        <a href="#">
+            <div class="card border-0">
+                <img src="{% static 'main/images/sec7-6.webp' %}" class="card-img-top" alt="Image 1">
+                <div class="card-body text-center">
+  
+                    <p class="card-text">Meet your use-it-for-everything table.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+  </div>
+    
+  <!--End Section 7-->
+  
+  
+  
+  <!--Start Section 8-->
+  
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-12 mycard pt-1 pb-1 ps-1 pe-1">
+          <a href="#">
+              <img src="{% static 'main/images/sec8.webp' %}" alt="Image 1" class="img-fluid">
+          </a>
+      </div>
+      
+    </div>
+    </div>
+    
+  <!--End Section 8-->
+  
+  
+  
+  <!--Start Section 9-->
+  
+  <div class="container text-center mt-5 sec5-head">
+    <h1>Three Different Ways to Save</h1>
+  </div>
+  
+  <div class="container mt-3 sec5">
+    <div class="row">
+        <div class="col-md-4 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec9-1.webp' %}" class="card-img-top pt-2" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">The Surplus Sale</h4>
+                        <p class="card-text">Deals so good, they feel like a mistake →</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec9-2.webp' %}" class="card-img-top pt-2" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Closeout Deals</h4>
+                        <p class="card-text">Save on discontinued products before they disappear →</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec9-3.webp' %}" class="card-img-top pt-2" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Open Box Deals</h4>
+                        <p class="card-text">Their return, your reward! Shop like-new items for less →</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+  </div>
+    
+  <!--End Section 9-->
+  
+  
+  <!--Start Section 10-->
+  
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-12 mycard pt-1 pb-1 ps-1 pe-1">
+          <a href="#">
+              <img src="{% static 'main/images/sec10.webp' %}" alt="Image 1" class="img-fluid">
+          </a>
+      </div>
+      
+    </div>
+    </div>
+    
+  <!--End Section 10-->
+  
+  
+  
+  <!--Start Section 11-->
+  
+  <div class="container text-center mt-5 sec5-head">
+    <h1>What We're Doing to Make an Impact</h1>
+  </div>
+  
+  <div class="container mt-3 sec5">
+    <div class="row">
+        <div class="col-md-4 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec11-1.webp' %}" class="card-img-top pt-2" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Contributing to All the Homes We Share</h5>
+                        <p class="card-text">Learn more about our DEI, Social Impact, and Sustainability Work →</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec11-2.webp' %}" class="card-img-top pt-2" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Building Supplier Diversity</h5>
+                        <p class="card-text">Learn more about the creators behind the businesses →</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4 mycard">
+            <a href="#">
+                <div class="card border-0">
+                    <img src="{% static 'main/images/sec11-3.webp' %}" class="card-img-top pt-2" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">All Things Home, Sustainably</h5>
+                        <p class="card-text">Discover so many (easy!) ways to live more sustainably →</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+  </div>
+    
+  <!--End Section 11-->
+  
+  
+  
+  <!--Start Section 12-->
+  
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-12 mycard pt-1 pb-1 ps-1 pe-1">
+          <a href="#">
+              <img src="{% static 'main/images/sec12.webp' %}" alt="Image 1" class="img-fluid">
+          </a>
+      </div>
+      
+    </div>
+    </div>
+    
+  <!--End Section 12-->
+  
+  
+  <!--Start Section 13-->
+  
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <img src="{% static 'main/images/sec13-1.webp' %}" alt="Icon 1" class="img-fluid">
+          <h4>Unbeatable Selection</h4>
+          <p>All things home, all in one place.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="{% static 'main/images/sec13-2.webp' %}" alt="Icon 2" class="img-fluid">
+          <h4>Expert Customer Service</h4>
+          <p>Our friendly team's on hand seven days a week.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="{% static 'main/images/sec13-3.webp' %}" alt="Icon 3" class="img-fluid">
+          <h5>Fast & Free Shipping Over $35*</h5>
+          <p>Plus, two-day delivery on thousands of items.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="{% static 'main/images/sec13-4.webp' %}" alt="Icon 4" class="img-fluid">
+          <h4>Amazing Value Every Day</h4>
+          <p>Items you love at prices that fit your budget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!--End Section 13-->
+  
+  
+  <div style="height: 250px;"></div>
+{% endblock %}
