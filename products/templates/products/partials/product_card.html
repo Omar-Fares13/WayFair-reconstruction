@@ -1,0 +1,12 @@
+<div class="col-lg-4 col-sm-6">
+    <div class="single_product_item">
+        <a href="{% url 'product_detail' product.id %}">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        </a>
+        <div class="single_product_text">
+            <h4>{{ product.name }}</h4>
+            <h3>${{ product.price }}</h3>
+            <a href="#" class="add_cart">+ add to cart<i class="fa-regular fa-heart"></i></a>
+        </div>
+    </div>
+</div>

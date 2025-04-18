@@ -98,21 +98,9 @@
 <!--Start Departments-->
 <div class="nav1 navbar navbar-expand-lg">
   <div class="container d-flex justify-content-center">
-    <a class="nav-link float-start" href="#">Furniture</a>
-    <a class="nav-link float-start" href="#">Outdoor</a>
-    <a class="nav-link float-start" href="#">Bedding & Bath</a>
-    <a class="nav-link float-start" href="#">Rugs</a>
-    <a class="nav-link float-start" href="#">Decor & Pillows</a>
-    <a class="nav-link float-start" href="#">Organization</a>
-    <a class="nav-link float-start" href="#">ligting</a>
-    <a class="nav-link float-start" href="#">Kitchen</a>
-    <a class="nav-link float-start" href="#">Baby & Kids</a>
-    <a class="nav-link float-start" href="#">Home Improvement</a>
-    <a class="nav-link float-start" href="#">Appliances</a>
-    <a class="nav-link float-start" href="#">Pet</a>
-    <a class="nav-link float-start" href="#">Holiday</a>
-    <a class="nav-link float-start" href="#">Shop by Room</a>
-    <a class="nav-link float-start" href="#" style="color: red;">Sale</a>
+    {% for category in categories %}
+      <a class="nav-link float-start" href="#">{{ category.name }}</a>
+    {% endfor %}
 </div>
 </div>
 <!--End Departments-->

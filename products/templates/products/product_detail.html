@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-6 border-end">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="main_image">
+                        <img src="{{ product.image.url }}" id="main_product_image" width="350">
+                    </div>
+                    <div class="thumbnail_images">
+                        <ul id="thumbnail">
+                            {% for img in product.additional_images.all %}
+                            <li><img onclick="changeImage(this)" src="{{ img.image.url }}" width="70"></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 right-side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>{{ product.title }}</h3>
+                        <span class="heart"><i class='bx bx-heart'></i></span>
+                    </div>
+                    <div class="mt-2 pr-3 content">
+                        <p>{{ product.description }}</p>
+                    </div>
+                    <h3>${{ product.price }}</h3>
+                    {% if product.is_available %}
+                        <p class="text-success fw-bold">In Stock</p>
+                    {% else %}
+                        <p class="text-danger fw-bold">Out of Stock</p>
+                    {% endif %}
+                    <div class="buttons d-flex flex-row mt-5 gap-3">
+                        <button class="btn btn-dark">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Similar Items -->
+<div class="container my-5">
+    <h2 class="mb-4">Similar Items</h2>
+    <div class="row">
+        {% for item in similar_products %}
+        {% include 'products/partials/similar_item_card.html' %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
