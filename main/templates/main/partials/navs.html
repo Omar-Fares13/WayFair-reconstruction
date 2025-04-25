@@ -32,33 +32,40 @@
 </div>
 
 <div class="d-flex justify-content-center">
-<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-  <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-</form>
+  <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" method="get" action="{% url 'shop' %}">
+    <input type="search" name="q" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" value="{{ request.GET.q }}">
+  </form>
 </div>
 <div class="d-flex justify-content-end">
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav  mb-2 mb-lg-0 ">
-    <li class="nav-item dropdown ">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-solid fa-circle-user fa-xl"></i> Account
-      </a> 
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <a href="#" class="btn mybtn" type="button">Sign In</a>
-          <a href="#" class="nav-link px-auto mx-0">Creat an Account</a>
-        </div>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-user"></i> My Account </a></li>
-        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-box-open"></i> My Orders</a></li>
-        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list"></i> Lists</a></li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i> Cart</a>
-    </li>
-  </ul>
-</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-circle-user fa-xl"></i>
+          {% if user.is_authenticated %}
+            {{ user.username }}
+          {% else %}
+            Account
+          {% endif %}
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {% if user.is_authenticated %}
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-user"></i> My Account </a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-box-open"></i> My Orders</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{% url 'logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
+          {% else %}
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href="{% url 'login' %}" class="btn mybtn" type="button">Sign In</a>
+            </div>
+          {% endif %}
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i> Cart</a>
+      </li>
+    </ul>
+  </div>
 </div>
 </div>
 </nav>
@@ -99,7 +106,7 @@
 <div class="nav1 navbar navbar-expand-lg">
   <div class="container d-flex justify-content-center">
     {% for category in categories %}
-      <a class="nav-link float-start" href="#">{{ category.name }}</a>
+      <a class="nav-link float-start" href="{% url 'shop_by_category' category.slug %}">{{ category.name }}</a>
     {% endfor %}
 </div>
 </div>

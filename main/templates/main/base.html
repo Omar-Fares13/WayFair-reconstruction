@@ -1,19 +1,18 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Wayfair Clone{% endblock %}</title>
+    
     {% include 'main/partials/head.html' %}
 </head>
 <body>
-
     {% include 'main/partials/navs.html' %}
 
     <main>
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
     </main>
 
     {% include 'main/partials/footer.html' %}
-
 </body>
 </html>
