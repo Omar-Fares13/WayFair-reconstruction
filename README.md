@@ -84,4 +84,3 @@ Visit `http://127.0.0.1:8000/` to see the app in action!
 This project is still under active development and not intended for production use.  
 Feel free to fork, clone, or contribute!
 
-```
