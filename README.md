@@ -43,11 +43,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-> If `requirements.txt` doesn’t exist yet, run:
-```bash
-pip freeze > requirements.txt
-```
-
 ### 4. Apply Migrations
 
 ```bash
